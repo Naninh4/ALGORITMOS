@@ -1,0 +1,1 @@
+Método seleção usado para ordenação.
