@@ -12,7 +12,7 @@ double mochila_binaria(int next,int pesomaximo ){
     if(next == -1){ // Para não ultrapassar o limite da tabela
         return 0.0;
     }
-    if(tabela[next][pesomaximo] != -1) return tabela[next][pesomaximo];// se já foi calculado retorna o valor
+    if(tabela[next][pesomaximo] != 0) return tabela[next][pesomaximo];// se já foi calculado retorna o valor
 
     double pegou_item = 0.0, nao_pegou_item = 0.0;
     if( pesomaximo - pesos[next] >=0) pegou_item = precos[next] + mochila_binaria( next-1, pesomaximo-pesos[next]);
@@ -22,6 +22,7 @@ double mochila_binaria(int next,int pesomaximo ){
     tabela[next][pesomaximo] = max(nao_pegou_item, pegou_item);
 
     return tabela[next][pesomaximo];
+
 }
 
 
@@ -36,7 +37,7 @@ int main(){
     }
     for (int i = 0; i < c; i++) {
         for (int j = 0; j < n+1; j++) {
-            tabela[i][j] = -1;
+            tabela[i][j] = 0;
         }
         
     }
@@ -45,11 +46,4 @@ int main(){
     double result = mochila_binaria(c-1,n);
 
     cout << fixed << setprecision(2) << result << endl;
-
-     for (int i = 0; i < c; i++) {
-        for (int j = 0; j < n+1; j++) {
-            cout <<" "<< tabela[i][j];
-        }
-        cout << "\n";
-    }
 }

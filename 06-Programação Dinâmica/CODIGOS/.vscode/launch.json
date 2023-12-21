@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/livia/OneDrive/Livinha User/BACKUP/IFRN - 20231014040029/ALGORITMOS/06-Programação Dinâmica",
-      "program": "c:/Users/livia/OneDrive/Livinha User/BACKUP/IFRN - 20231014040029/ALGORITMOS/06-Programação Dinâmica/build/Debug/outDebug",
+      "cwd": "c:/Users/livia/OneDrive/Livinha User/BACKUP/IFRN - 20231014040029/ALGORITMOS/06-Programação Dinâmica/CODIGOS",
+      "program": "c:/Users/livia/OneDrive/Livinha User/BACKUP/IFRN - 20231014040029/ALGORITMOS/06-Programação Dinâmica/CODIGOS/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
