@@ -1,5 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
+C
 
 double pd[110][100010]; /* 100 itens. Peso máximo: 100000 */
 
